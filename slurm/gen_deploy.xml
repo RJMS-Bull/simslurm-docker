@@ -1,0 +1,815 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd">
+<platform version="4">
+  <process host="localhost" function="localhost_slurmctld">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmctld"/>
+     <argument value="-D"/>
+     <argument value="-c"/>
+  </process>
+  <process host="localhost" function="localhost_launcher" start_time="300">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="/home/root/slurm/launcher.sh"/>
+  </process>
+
+  <process host="host0" function="slurmd_dummy0">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy0"/>
+  </process>
+
+  <process host="host1" function="slurmd_dummy1">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy1"/>
+  </process>
+
+  <process host="host2" function="slurmd_dummy2">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy2"/>
+  </process>
+
+  <process host="host3" function="slurmd_dummy3">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy3"/>
+  </process>
+
+  <process host="host4" function="slurmd_dummy4">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy4"/>
+  </process>
+
+  <process host="host5" function="slurmd_dummy5">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy5"/>
+  </process>
+
+  <process host="host6" function="slurmd_dummy6">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy6"/>
+  </process>
+
+  <process host="host7" function="slurmd_dummy7">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy7"/>
+  </process>
+
+  <process host="host8" function="slurmd_dummy8">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy8"/>
+  </process>
+
+  <process host="host9" function="slurmd_dummy9">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy9"/>
+  </process>
+
+  <process host="host10" function="slurmd_dummy10">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy10"/>
+  </process>
+
+  <process host="host11" function="slurmd_dummy11">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy11"/>
+  </process>
+
+  <process host="host12" function="slurmd_dummy12">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy12"/>
+  </process>
+
+  <process host="host13" function="slurmd_dummy13">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy13"/>
+  </process>
+
+  <process host="host14" function="slurmd_dummy14">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy14"/>
+  </process>
+
+  <process host="host15" function="slurmd_dummy15">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy15"/>
+  </process>
+
+  <process host="host16" function="slurmd_dummy16">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy16"/>
+  </process>
+
+  <process host="host17" function="slurmd_dummy17">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy17"/>
+  </process>
+
+  <process host="host18" function="slurmd_dummy18">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy18"/>
+  </process>
+
+  <process host="host19" function="slurmd_dummy19">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy19"/>
+  </process>
+
+  <process host="host20" function="slurmd_dummy20">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy20"/>
+  </process>
+
+  <process host="host21" function="slurmd_dummy21">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy21"/>
+  </process>
+
+  <process host="host22" function="slurmd_dummy22">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy22"/>
+  </process>
+
+  <process host="host23" function="slurmd_dummy23">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy23"/>
+  </process>
+
+  <process host="host24" function="slurmd_dummy24">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy24"/>
+  </process>
+
+  <process host="host25" function="slurmd_dummy25">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy25"/>
+  </process>
+
+  <process host="host26" function="slurmd_dummy26">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy26"/>
+  </process>
+
+  <process host="host27" function="slurmd_dummy27">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy27"/>
+  </process>
+
+  <process host="host28" function="slurmd_dummy28">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy28"/>
+  </process>
+
+  <process host="host29" function="slurmd_dummy29">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy29"/>
+  </process>
+
+  <process host="host30" function="slurmd_dummy30">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy30"/>
+  </process>
+
+  <process host="host31" function="slurmd_dummy31">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy31"/>
+  </process>
+
+  <process host="host32" function="slurmd_dummy32">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy32"/>
+  </process>
+
+  <process host="host33" function="slurmd_dummy33">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy33"/>
+  </process>
+
+  <process host="host34" function="slurmd_dummy34">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy34"/>
+  </process>
+
+  <process host="host35" function="slurmd_dummy35">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy35"/>
+  </process>
+
+  <process host="host36" function="slurmd_dummy36">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy36"/>
+  </process>
+
+  <process host="host37" function="slurmd_dummy37">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy37"/>
+  </process>
+
+  <process host="host38" function="slurmd_dummy38">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy38"/>
+  </process>
+
+  <process host="host39" function="slurmd_dummy39">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy39"/>
+  </process>
+
+  <process host="host40" function="slurmd_dummy40">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy40"/>
+  </process>
+
+  <process host="host41" function="slurmd_dummy41">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy41"/>
+  </process>
+
+  <process host="host42" function="slurmd_dummy42">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy42"/>
+  </process>
+
+  <process host="host43" function="slurmd_dummy43">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy43"/>
+  </process>
+
+  <process host="host44" function="slurmd_dummy44">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy44"/>
+  </process>
+
+  <process host="host45" function="slurmd_dummy45">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy45"/>
+  </process>
+
+  <process host="host46" function="slurmd_dummy46">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy46"/>
+  </process>
+
+  <process host="host47" function="slurmd_dummy47">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy47"/>
+  </process>
+
+  <process host="host48" function="slurmd_dummy48">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy48"/>
+  </process>
+
+  <process host="host49" function="slurmd_dummy49">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy49"/>
+  </process>
+
+  <process host="host50" function="slurmd_dummy50">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy50"/>
+  </process>
+
+  <process host="host51" function="slurmd_dummy51">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy51"/>
+  </process>
+
+  <process host="host52" function="slurmd_dummy52">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy52"/>
+  </process>
+
+  <process host="host53" function="slurmd_dummy53">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy53"/>
+  </process>
+
+  <process host="host54" function="slurmd_dummy54">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy54"/>
+  </process>
+
+  <process host="host55" function="slurmd_dummy55">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy55"/>
+  </process>
+
+  <process host="host56" function="slurmd_dummy56">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy56"/>
+  </process>
+
+  <process host="host57" function="slurmd_dummy57">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy57"/>
+  </process>
+
+  <process host="host58" function="slurmd_dummy58">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy58"/>
+  </process>
+
+  <process host="host59" function="slurmd_dummy59">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy59"/>
+  </process>
+
+  <process host="host60" function="slurmd_dummy60">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy60"/>
+  </process>
+
+  <process host="host61" function="slurmd_dummy61">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy61"/>
+  </process>
+
+  <process host="host62" function="slurmd_dummy62">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy62"/>
+  </process>
+
+  <process host="host63" function="slurmd_dummy63">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy63"/>
+  </process>
+
+  <process host="host64" function="slurmd_dummy64">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy64"/>
+  </process>
+
+  <process host="host65" function="slurmd_dummy65">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy65"/>
+  </process>
+
+  <process host="host66" function="slurmd_dummy66">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy66"/>
+  </process>
+
+  <process host="host67" function="slurmd_dummy67">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy67"/>
+  </process>
+
+  <process host="host68" function="slurmd_dummy68">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy68"/>
+  </process>
+
+  <process host="host69" function="slurmd_dummy69">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy69"/>
+  </process>
+
+  <process host="host70" function="slurmd_dummy70">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy70"/>
+  </process>
+
+  <process host="host71" function="slurmd_dummy71">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy71"/>
+  </process>
+
+  <process host="host72" function="slurmd_dummy72">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy72"/>
+  </process>
+
+  <process host="host73" function="slurmd_dummy73">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy73"/>
+  </process>
+
+  <process host="host74" function="slurmd_dummy74">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy74"/>
+  </process>
+
+  <process host="host75" function="slurmd_dummy75">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy75"/>
+  </process>
+
+  <process host="host76" function="slurmd_dummy76">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy76"/>
+  </process>
+
+  <process host="host77" function="slurmd_dummy77">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy77"/>
+  </process>
+
+  <process host="host78" function="slurmd_dummy78">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy78"/>
+  </process>
+
+  <process host="host79" function="slurmd_dummy79">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy79"/>
+  </process>
+
+  <process host="host80" function="slurmd_dummy80">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy80"/>
+  </process>
+
+  <process host="host81" function="slurmd_dummy81">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy81"/>
+  </process>
+
+  <process host="host82" function="slurmd_dummy82">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy82"/>
+  </process>
+
+  <process host="host83" function="slurmd_dummy83">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy83"/>
+  </process>
+
+  <process host="host84" function="slurmd_dummy84">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy84"/>
+  </process>
+
+  <process host="host85" function="slurmd_dummy85">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy85"/>
+  </process>
+
+  <process host="host86" function="slurmd_dummy86">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy86"/>
+  </process>
+
+  <process host="host87" function="slurmd_dummy87">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy87"/>
+  </process>
+
+  <process host="host88" function="slurmd_dummy88">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy88"/>
+  </process>
+
+  <process host="host89" function="slurmd_dummy89">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy89"/>
+  </process>
+
+  <process host="host90" function="slurmd_dummy90">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy90"/>
+  </process>
+
+  <process host="host91" function="slurmd_dummy91">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy91"/>
+  </process>
+
+  <process host="host92" function="slurmd_dummy92">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy92"/>
+  </process>
+
+  <process host="host93" function="slurmd_dummy93">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy93"/>
+  </process>
+
+  <process host="host94" function="slurmd_dummy94">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy94"/>
+  </process>
+
+  <process host="host95" function="slurmd_dummy95">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy95"/>
+  </process>
+
+  <process host="host96" function="slurmd_dummy96">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy96"/>
+  </process>
+
+  <process host="host97" function="slurmd_dummy97">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy97"/>
+  </process>
+
+  <process host="host98" function="slurmd_dummy98">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy98"/>
+  </process>
+
+  <process host="host99" function="slurmd_dummy99">
+     <argument value="/home/root/simunix/bin/simunix"/>
+     <argument value="slurmd"/>
+     <argument value="-D"/>
+     <argument value="-N"/>
+     <argument value="dummy99"/>
+  </process>
+
+</platform>
